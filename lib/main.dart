@@ -7,10 +7,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      body: Column(
+      body: Center(
+        child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
+        children:  <Widget>[
           Flexible(
             child: Container(color: Colors.blue, height: 100, width: 100),
           ),
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
           )
         ],
       ),
+      ), 
     ));
   }
 }
